@@ -1,0 +1,60 @@
+
+input {
+    width: 320px;
+    height: 50px;
+    border-top: none;
+    border-right: none;
+    border-left: none; 
+    
+}
+
+  input:focus {
+      border: none;
+  }
+
+.form3 {
+    position: absolute;
+    left: 450px;
+    top: 60px;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding: 3px;
+    width: 400px;
+    height: 470px
+}
+
+button {
+    position: absolute;
+    left: 60px;
+    top: 410px;
+    width: 300px;
+    height: 40px;
+    background-color:  #00c25c;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+}
+
+input:focus {
+    
+    box-shadow: none;
+    background-color:   #f2f2f2;
+    border-bottom: 2px solid #99ccff;
+}
+
+button:hover {
+    background-color:  #00b226;
+}
+
+.form3-inner {
+    position: absolute;
+    left: 45px;
+    top: 80px
+}
+
+h3 {
+    position: absolute;
+    left: 110px;
+    color: #404040;
+}

@@ -1,0 +1,57 @@
+input {
+    width: 320px;
+    height: 50px;
+    border-top: none;
+    border-right: none;
+    border-left: none; 
+    border-radius: 0px;
+    border-bottom-color: #E0E0E0;
+}
+
+input:focus {
+    
+    box-shadow: none;
+    background-color:   #f2f2f2;
+    border-bottom: 2px solid #99ccff;
+}
+
+
+.panel {
+    position: absolute;
+    left: 480px;
+    top: 100px;
+    height: 330px;
+    width: 400px;
+    padding: 10px;
+    border: 1px solid #E8E8E8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+a {
+    position: relative;
+    top: 90px;
+    text-decoration: none;
+}
+
+.alert {
+    position: relative;
+    top: 17px;
+    color: red;
+}
+
+.form-3 {
+    position: absolute;
+    top: 64px;
+    left: 37px;
+}
+
+h3 {
+    position: relative;
+    left: 140px;
+    color: #585858;
+}
+
+button {
+    position: absolute;
+    left: 120px;
+}

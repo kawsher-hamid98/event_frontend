@@ -1,0 +1,33 @@
+
+<div class="container" *ngIf = "event">
+
+  <div class="first1">
+
+    <img src="{{event.url}}">
+
+    <div class="name">
+      <h3 class="eventName">{{event.eventName}}</h3>
+      <h4 class="organizerName">By {{event.organizerName}}</h4>
+    </div>
+
+
+    <div class="button">
+    <button class="btn btn-success" routerLink = "/ticket/{{event.id}}">Get Free Ticket</button>
+    </div>
+
+    <div class="EventDetails">
+      <h3 class="EventAboutCaption">About</h3>
+      <p class="eventDetails-inner">{{event.eventDescription}}</p>
+    </div>
+
+    <div class="location">
+      <h3 class="location-caption">Location</h3>
+      <h3 class="location-inner">{{event.eventAddress}}</h3>
+    </div>
+
+    <div class="organizer-details">
+        <h3 class="captionOrganizer">About Organizer</h3>
+        <h3 class="organizerDetails">{{event.organizerDetails}}</h3>
+      </div>
+    </div>
+</div>

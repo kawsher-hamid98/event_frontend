@@ -1,0 +1,50 @@
+
+.address {
+    position: absolute;
+    top: 0px;
+    height: 70px;
+    left: 259px;
+    border: 1px solid #4d4d4d;
+    width: 842px;
+    color: #e6e6e6;
+    background-color: #4d4d4d;
+}
+
+h2 {
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+}
+
+img {
+    position: relative;
+    height: 590px;
+    width: 1050px;
+    top: 0px;
+    left: 150px;
+}
+
+a {
+    background-color: #333333;
+    height: 200px;
+    width: 150px;
+    position: absolute;
+}
+
+.carousel-control-prev {
+    position: absolute;
+    top: 250px;
+}
+
+.carousel-control-next {
+    position: absolute;
+    top: 250px;
+}
+
+button {
+    position: absolute;
+    top: 460px;
+    left: 680px;
+    width: 150px;
+    border-radius: 0px;
+}

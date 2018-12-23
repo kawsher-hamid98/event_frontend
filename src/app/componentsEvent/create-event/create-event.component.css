@@ -1,0 +1,43 @@
+
+.event1 {
+  position: relative;
+  left: 320px;
+  width: 730px;
+  height: 360px;
+  top: 50px;
+  border: 1px solid #cccccc;
+}
+
+input {
+  position: relative;
+  width: 300px;
+  height: 25px
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+.group-1 {
+  position: relative;
+  left: 380px;
+  bottom: 219px
+}
+
+h2 {
+  position: relative;
+  left: 255px;
+}
+
+.group-2 {
+  position: relative;
+  left:47px
+}
+
+button {
+  position: relative;
+  bottom: 190px;
+  left: 310px;
+  border-radius: 0px;
+}
+

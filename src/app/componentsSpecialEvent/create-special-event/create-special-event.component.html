@@ -1,0 +1,138 @@
+
+<div class="event1">
+
+  <h2>Create Special Event</h2>
+
+<form name="form" (ngSubmit)="saveEvent()">
+
+<div class="group-2">
+<div class="form-group">
+  <label for="eventName">Name </label>
+  <input type="text" class="form-control" maxlength="100" name="eventName" placeholder="Enter name" [(ngModel)]="specialEvent.eventName">
+</div>
+
+<div class="form-group">
+  <label for="eventAddress">Address </label>
+  <input type="text" class="form-control" maxlength="100" name="eventAddress" placeholder="Enter address" [(ngModel)]="specialEvent.eventAddress">
+</div>
+
+<div class="form-group">
+  <label for="eventDescription">Description </label>
+  <input type="text" class="form-control" maxlength="800" name="eventDescription" placeholder="Enter description" [(ngModel)]="specialEvent.eventDescription">
+</div>
+
+<div class="form-group">
+  <label for="vacancy">Vacancy </label>
+  <input type="text" class="form-control" maxlength="800" name="vacancy" placeholder="Enter vacancy" [(ngModel)]="specialEvent.vacancy">
+</div>
+</div>
+
+<div class="group-1">
+
+<div class="form-group">
+  <label for="organizerName">Organizer </label>
+  <input type="text" class="form-control" maxlength="70" name="organizerName" placeholder="Enter Organizer name" [(ngModel)]="specialEvent.organizerName">
+</div>
+
+<div class="form-group">
+      <label for="organizerDetails">Organizer Details </label>
+      <input type="text" class="form-control" maxlength="1000" name="organizerDetails" placeholder="Enter Organizer Details" [(ngModel)]="specialEvent.organizerDetails">
+  </div>
+
+<div class="form-group">
+  <label for="url">Photo Url </label>
+  <input type="text" class="form-control" name="url" placeholder="Enter url" [(ngModel)]="specialEvent.url">
+</div>
+
+<div class="group-3">
+
+<label for="country">country </label><br>
+<select [(ngModel)]="specialEvent.country"   name="first">
+    <option *ngFor="let o of countries" >{{o.name}}</option>
+ </select>
+
+ <div class="date1">
+ <label> Date </label><br>
+ <input type="date" name="date" [(ngModel)]="specialEvent.date">
+ </div>
+ <div class="category">
+ <label for="category">Category </label><br>
+<select [(ngModel)]="specialEvent.category"   name="category">
+    <option *ngFor="let c of categories" >{{c.name}}</option>
+ </select>
+ </div>
+
+ <div class="time1">
+ <label> Start Time </label><br>
+ <input type="time" name="startTime" [(ngModel)]="specialEvent.startTime">
+</div>
+
+<div class="time2">
+    <label> End Time </label><br>
+    <input type="time" name="endTime" [(ngModel)]="specialEvent.endTime">
+   </div>
+
+ </div>
+
+</div>
+
+<div class="bg-2">
+<button class="btn btn-success" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Add Sub Events
+      </button>
+    
+    <div class="collapse" id="collapseExample">
+      <div class="card card-body">
+            <table class="table  table-sm">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>start time</th>
+                            <th>end time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr *ngFor="let k of specialEvent.subEvents; let i = index">                            <td>
+                                <input [(ngModel)]="k.name" class="form-control" type="text" name="{{k.name}}" />
+                            </td>
+                           
+                            <td>
+                                <input [(ngModel)]="k.startTime" class="form-control" type="text" name="{{k.startTime}}" />
+                            </td>
+
+                            <td>
+                                    <input [(ngModel)]="k.endTime" class="form-control" type="text" name="{{k.endTime}}" />
+                                </td>
+
+                            <td>
+                                <button class="btn btn-default"  type="button" (click)="deleteFieldValue(i)">Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="form-control" type="text" id="newAttributeName" [(ngModel)]="newAttribute.name" name="newAttributeName" />
+                            </td>
+                            <td>
+                                <input class="form-control" type="text" id="newAttributeStratTime" [(ngModel)]="newAttribute.startTime" name="newAttributeStratTime" />
+                            </td>
+                            <td>
+                                <input class="form-control" type="text" id="newAttributeEndTime" [(ngModel)]="newAttribute.endTime" name="newAttributeEndTime" />
+                            </td>
+                            <td>
+                                <button class="btn btn-default" type="button" (click)="addFieldValue()">Add</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+              </div>
+    </div>
+
+</div>
+
+<div class="btn-1">
+    <button class="btn btn-primary" type="submit">Add Event</button>
+</div>
+  
+</form>
+
+</div>

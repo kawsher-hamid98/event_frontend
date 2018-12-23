@@ -1,0 +1,29 @@
+<div id="carouselExampleFade" class="carousel slide" data-ride="carousel" data-interval="4000">
+
+  <ul class="carousel-indicators"> 
+     <li data-target="#carouselExampleFade" *ngFor="let li of SpecialEvent; let i = index" [attr.data-slide-to]="i" [ngClass]="{'active' : i == 0}"></li>
+  </ul>
+  
+  <div class="carousel-inner">
+
+    <div class="carousel-item active" *ngFor="let event of SpecialEvent; let i = index" [ngClass]="{'active': i == 0}">
+      <img src="{{event.url}}">
+      <div class="address">
+      <h2>{{event.eventName}}</h2>
+      <h2>{{event.eventAddress}}</h2>
+      <button routerLink = "/specialEventDetails/{{event.id}}" class="btn btn-success">See details</button>
+      </div>
+    </div>
+  
+  </div>
+  
+  <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+</div>

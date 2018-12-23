@@ -1,0 +1,121 @@
+.event1 {
+  position: relative;
+  left: 220px;
+  width: 900px;
+  height: 460px;
+  top: 10px;
+  border: 1px solid #cccccc;
+  background-color: #505050;
+  color: #DCDCDC;
+}
+
+input {
+  position: relative;
+  width: 300px;
+  height: 25px;
+  border-radius: 0px;
+}
+
+::placeholder {
+  font-size: 16px;
+}
+
+.group-1 {
+  position: absolute;
+  left: 380px;
+  top: 60px
+}
+
+.group-3 {
+  position: relative;
+  left: 330px;
+  bottom: 219px;
+  left: 335px;
+}
+
+h2 {
+  position: absolute;
+  left: 312px;
+}
+
+.group-2 {
+  position: relative;
+  left:47px;
+  top: 60px
+}
+
+
+
+.date1 {
+  position: relative;
+  top: 16px
+}
+
+.date1 input {
+  width: 123px;
+  text-align: center;
+  font-size: 15px
+}
+
+.time1 {
+  position: relative;
+  top: 48px;
+  right: 335px;
+}
+
+.time1 input {
+  width: 100px;
+  font-size: 14px;
+  border: none
+}
+
+.time2 {
+  position: relative;
+  top: -10px;
+  right: 200px;
+}
+
+.time2 input {
+  width: 100px;
+  font-size: 14px;
+  border: none
+}
+
+.category {
+  position: relative;
+  top: 32px
+}
+
+.category select {
+  width: 80px
+}
+
+.btn-1 {
+  position: absolute;
+  top: 400px;
+  left: 485px;
+  border-radius: 0px;
+}
+
+.bg-2 {
+  position: absolute;
+  top: 400px;
+  left: 270px;
+}
+
+.card-body {
+  position: absolute;
+  right: -493px;
+  width: 900px;
+  background-color: #505050;
+
+}
+
+table {
+  display: inline;
+  color:#b3b3b3;
+}
+
+.table input {
+  width: 240px
+}
